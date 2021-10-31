@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - Firsttryspring
+name: Build and deploy JAR app to Azure Web App - secondetry
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Firsttryspring'
+          app-name: 'secondetry'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_f3d020d7224f4a1a81a9dff3bb421731 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1e9016e76ce44dabbb2666b644055e6b }}
           package: '*.jar'
